@@ -1,0 +1,63 @@
+.heading {
+    display: flex;
+    height: 100px;
+    background-color: black;
+    font-size: 50px;
+    color: aliceblue;
+    align-items: center;
+}
+
+.heading > h1 {
+    margin: 20px;
+}
+
+.maincontainer {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 100px);
+}
+
+.sideMenu {
+    background-color: rgba(226, 211, 211, 0.425);
+    flex-basis: 15vw;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.todayWeekContainer {
+    width: 80%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#today {
+    margin-bottom: 20px;
+}
+#today, #week {
+    width: 100%;
+    height: fit-content;
+}
+
+#today:hover, #week:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#project {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.tasks {
+    flex-basis: 85vw;
+    text-align: center;
+    font-size: 30px;
+}
+
