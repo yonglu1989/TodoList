@@ -24,7 +24,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
     font-size: 20px;
 }
 
@@ -52,12 +51,71 @@
 #project {
     font-size: 30px;
     font-weight: bold;
-
+    margin: 10px;
 }
 
-.tasks {
+#addProjectButton:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+
+/* Add Projects Form styling */
+.addCancelContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+#addProjectForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addProjectInput {
+    width: 90%;
+}
+
+#addProjectSubmit, #addProjectCancel {
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+}
+#addProjectSubmit:hover, #addProjectCancel:hover {
+    background: rgba(26, 164, 255, 0.774);
+    cursor: pointer;
+}
+
+/* Projects styling */
+
+#projectsContainer {
+    width: 75%;
+}
+.project {
+    width: 100%;
+    /* border: 1px black solid; */
+    margin: 3px;
+    height: 25px;
+    text-align: left;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+/* Tasks Styling */
+.tasksContainer {
     flex-basis: 85vw;
     text-align: center;
     font-size: 30px;
 }
 
+#tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
